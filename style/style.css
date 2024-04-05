@@ -1,6 +1,6 @@
 .container {
   width: clamp(500px, 80%, 1200px);
-  margin: 0 auto;
+  margin: 30px auto;
 }
 
 * {
@@ -15,8 +15,9 @@ body {
 
 .hero {
   background-color: #1d4925;
-  background: url(../images/easter.jpg) no-repeat center center/cover;
-  height: 100dvh;
+  background: url(../images/header.jpg) no-repeat center center/cover;
+  height: 80dvh;
+  position: relative;
 }
 .hero::before {
   content: "";
@@ -25,15 +26,20 @@ body {
   height: 100%;
   position: absolute;
 }
-.hero .container-hero {
+.hero .header-content {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
-.hero .container-hero h1 {
-  color: #eee5cd;
-  font-size: 4rem;
-  font-size: clamp(1rem, 8vw, 6rem);
+.hero .header-content * {
   z-index: 1;
+  color: #eee5cd;
+}
+.hero .header-content h1 {
+  font-size: clamp(1rem, 8vw, 6rem);
+}
+.hero .header-content h2 {
+  font-size: clamp(0.8rem, 6vw, 4rem);
 }/*# sourceMappingURL=style.css.map */
