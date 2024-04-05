@@ -42,4 +42,8 @@ body {
 }
 .hero .header-content h2 {
   font-size: clamp(0.8rem, 6vw, 4rem);
+}
+.hero .header-content p {
+  margin-top: 2rem;
+  font-size: clamp(0.6rem, 4vw, 1.2rem);
 }/*# sourceMappingURL=style.css.map */
