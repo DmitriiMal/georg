@@ -4,10 +4,16 @@
   margin: 0 auto;
 }
 
-h1,
-h2 {
+h1, h2,
+h3 {
   font-family: "Barlow Condensed", sans-serif;
   text-transform: uppercase;
+  font-size: clamp(1rem, 8vw, 6rem);
+}
+
+h2,
+h3 {
+  font-size: clamp(0.8rem, 6vw, 4rem);
 }
 
 * {
@@ -40,21 +46,18 @@ body {
   position: absolute;
 }
 .hero .header-content {
+  width: clamp(500px, 80%, 1200px);
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   align-items: center;
   height: 100%;
 }
 .hero .header-content * {
   z-index: 1;
   color: #eee5cd;
-}
-.hero .header-content h1 {
-  font-size: clamp(1rem, 8vw, 6rem);
-}
-.hero .header-content h2 {
-  font-size: clamp(0.8rem, 6vw, 4rem);
 }
 .hero .header-content p {
   margin-top: 2rem;
