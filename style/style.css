@@ -1,6 +1,13 @@
 .container {
   width: clamp(500px, 80%, 1200px);
-  margin: 30px auto;
+  padding: 30px 0;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
 }
 
 * {
@@ -9,8 +16,14 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.heading {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
 }
 
 .hero {
@@ -45,5 +58,10 @@ body {
 }
 .hero .header-content p {
   margin-top: 2rem;
-  font-size: clamp(0.6rem, 4vw, 1.2rem);
+  font-size: clamp(0.4rem, 6vw, 1.2rem);
+}
+
+.section-light {
+  height: 80dvh;
+  background-color: #eee5cd;
 }/*# sourceMappingURL=style.css.map */
