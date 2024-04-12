@@ -24,15 +24,10 @@ h3 {
 body {
   font-family: "Montserrat", sans-serif;
   line-height: 1.6;
-  overflow-x: hidden;
-}
-
-.heading {
-  font-family: "Barlow Condensed", sans-serif;
 }
 
 .hero {
-  background: url(../images/header.jpg) no-repeat center center/cover;
+  background: url("../images/header.jpg") no-repeat center center/cover;
   height: 80dvh;
   position: relative;
 }
