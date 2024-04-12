@@ -11,3 +11,11 @@ $dark-color: #333;
 $gradient: linear-gradient(265deg, $main-color 55%, $gradient-color 100%);
 $bg-image: url('../img/showcase.jpg');
 $transition-duration: 0.3s;
+
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return $dark-color;
+  } @else {
+    @return $light-color;
+  }
+}

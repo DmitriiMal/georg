@@ -29,7 +29,6 @@ body {
 
 .heading {
   font-family: "Barlow Condensed", sans-serif;
-  font-weight: 600;
 }
 
 .hero {
@@ -59,12 +58,24 @@ body {
   z-index: 1;
   color: #eee5cd;
 }
+.hero .header-content h1, .hero .header-content h2,
+.hero .header-content h3 {
+  font-weight: 600;
+}
 .hero .header-content p {
   margin-top: 2rem;
   font-size: clamp(0.4rem, 6vw, 1.2rem);
 }
 
-.section-light {
+.section-light, .section-foto {
   height: 80dvh;
   background-color: #eee5cd;
+  background: linear-gradient(90deg, #eee5cd 0%, #fff 100%);
+  color: #333;
+}
+
+.section-foto {
+  background: linear-gradient(90deg, #333 0%, #444 100%);
+  background-color: #333;
+  color: #eee5cd;
 }/*# sourceMappingURL=style.css.map */
