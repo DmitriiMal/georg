@@ -33,6 +33,12 @@ header {
     width: 100%;
     height: 100%;
     position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  & * {
+    z-index: 1;
   }
 
   .header-content {
@@ -45,11 +51,8 @@ header {
     text-align: center;
     align-items: center;
     height: 100%;
-
-    & * {
-      z-index: 1;
-      color: $light-color;
-    }
+    text-wrap: balance;
+    color: $light-color;
 
     h1 {
       //   font-size: clamp(1rem, 8vw, 6rem);
@@ -61,7 +64,7 @@ header {
     // }
 
     p {
-      margin-top: 2rem;
+      margin-top: 1rem;
       font-size: clamp(0.4rem, 6vw, 1.2rem);
     }
   }
@@ -77,16 +80,36 @@ header {
 
 .section-light {
   height: 80dvh;
+  text-wrap: balance;
+
   background-color: $light-color;
   background: linear-gradient(0deg, $light-color 0%, #fff 100%);
   // background: radial-gradient(circle, #fff 0%, $light-color 80%);
   color: set-text-color($light-color);
 }
 
-.section-foto {
+.section-photo {
   @extend .section-light;
-  background: linear-gradient(90deg, $dark-color 0%, #444 100%);
-  background: radial-gradient(circle, #444 0%, $dark-color 80%);
-  background-color: $dark-color;
-  color: set-text-color($dark-color);
+  // background: linear-gradient(90deg, $dark-color 0%, #444 100%);
+  // background: radial-gradient(circle, #444 0%, $dark-color 80%);
+  // background-color: $dark-color;
+  // color: set-text-color($dark-color);
+  color: #fff;
+  background: url('../images/fuer_wen.jpg') no-repeat fixed center/cover;
+  height: 50dvh;
+  position: relative;
+
+  &::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &* {
+    z-index: 1;
+  }
 }
