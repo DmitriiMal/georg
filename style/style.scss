@@ -43,8 +43,8 @@ header {
 
   .header-content {
     // width: clamp(500px, 80%, 1200px);
-    margin: 0 auto;
-    padding: 0 30px;
+    // margin: 0 auto;
+    padding: 0 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -89,12 +89,12 @@ header {
 }
 
 .section-photo {
-  @extend .section-light;
+  // @extend .section-light;
   // background: linear-gradient(90deg, $dark-color 0%, #444 100%);
   // background: radial-gradient(circle, #444 0%, $dark-color 80%);
   // background-color: $dark-color;
-  // color: set-text-color($dark-color);
-  color: #fff;
+  color: set-text-color($dark-color);
+  text-wrap: balance;
   background: url('../images/fuer_wen.jpg') no-repeat fixed center/cover;
   height: 50dvh;
   position: relative;
@@ -109,7 +109,12 @@ header {
     left: 0;
   }
 
-  &* {
+  // .container {
+  //   z-index: 1;
+  //   position: relative;
+  // }
+  & * {
     z-index: 1;
+    position: relative;
   }
 }
