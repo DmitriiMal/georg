@@ -79,13 +79,17 @@ header {
 }
 
 .section-light {
-  height: 80dvh;
+  height: 50dvh;
   text-wrap: balance;
 
   background-color: $light-color;
   background: linear-gradient(0deg, $light-color 0%, #fff 100%);
   // background: radial-gradient(circle, #fff 0%, $light-color 80%);
   color: set-text-color($light-color);
+
+  .date {
+    font-weight: 600;
+  }
 }
 
 .section-photo {

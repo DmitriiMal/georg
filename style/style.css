@@ -72,11 +72,14 @@ header svg {
 }
 
 .section-light {
-  height: 80dvh;
+  height: 50dvh;
   text-wrap: balance;
   background-color: #eee5cd;
   background: linear-gradient(0deg, #eee5cd 0%, #fff 100%);
   color: #333;
+}
+.section-light .date {
+  font-weight: 600;
 }
 
 .section-photo {
