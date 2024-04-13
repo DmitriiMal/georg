@@ -23,7 +23,7 @@ body {
 
 header {
   background: url("../images/header.jpg") no-repeat center center/cover;
-  height: 80vh;
+  height: 80dvh;
   position: relative;
 }
 header::before {
@@ -64,7 +64,7 @@ header svg {
 }
 
 .section-light, .section-foto {
-  height: 80vh;
+  height: 80dvh;
   background-color: #eee5cd;
   background: linear-gradient(0deg, #eee5cd 0%, #fff 100%);
   color: #333;

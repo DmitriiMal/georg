@@ -24,7 +24,7 @@ body {
 header {
   // background-color: $main-color;
   background: $bg-image no-repeat center center/cover;
-  height: 80vh;
+  height: 80dvh;
   position: relative;
 
   &::before {
@@ -76,7 +76,7 @@ header {
 }
 
 .section-light {
-  height: 80vh;
+  height: 80dvh;
   background-color: $light-color;
   background: linear-gradient(0deg, $light-color 0%, #fff 100%);
   // background: radial-gradient(circle, #fff 0%, $light-color 80%);
