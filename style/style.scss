@@ -21,7 +21,7 @@ body {
 //   font-family: $heading-font;
 // }
 
-.hero {
+header {
   // background-color: $main-color;
   background: $bg-image no-repeat center center/cover;
   height: 80vh;
@@ -36,8 +36,9 @@ body {
   }
 
   .header-content {
-    width: clamp(500px, 80%, 1200px);
+    // width: clamp(500px, 80%, 1200px);
     margin: 0 auto;
+    padding: 0 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -1,6 +1,6 @@
 .container {
   width: clamp(500px, 80%, 1200px);
-  margin: 0 auto;
+  margin: 30px auto;
 }
 
 h1, h2,
@@ -26,21 +26,21 @@ body {
   overflow-x: hidden;
 }
 
-.hero {
+header {
   background: url("../images/header.jpg") no-repeat center center/cover;
   height: 80vh;
   position: relative;
 }
-.hero::before {
+header::before {
   content: "";
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%;
   position: absolute;
 }
-.hero .header-content {
-  width: clamp(500px, 80%, 1200px);
+header .header-content {
   margin: 0 auto;
+  padding: 0 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -48,19 +48,19 @@ body {
   align-items: center;
   height: 100%;
 }
-.hero .header-content * {
+header .header-content * {
   z-index: 1;
   color: #eee5cd;
 }
-.hero .header-content h1, .hero .header-content h2,
-.hero .header-content h3 {
+header .header-content h1, header .header-content h2,
+header .header-content h3 {
   font-weight: 600;
 }
-.hero .header-content p {
+header .header-content p {
   margin-top: 2rem;
   font-size: clamp(0.4rem, 6vw, 1.2rem);
 }
-.hero svg {
+header svg {
   position: absolute;
   bottom: 0;
   width: 100%;
