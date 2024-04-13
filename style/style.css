@@ -57,7 +57,7 @@ header .header-content p {
 }
 header svg {
   position: absolute;
-  bottom: 0;
+  bottom: -2px;
   width: 100%;
   height: 5vw;
   fill: #fff;
