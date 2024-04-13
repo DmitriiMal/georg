@@ -16,6 +16,10 @@ h3 {
   font-size: clamp(2.3rem, 6vw, 4rem);
 }
 
+.thin {
+  font-weight: 200;
+}
+
 * {
   margin: 0;
   padding: 0;
