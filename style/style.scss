@@ -5,6 +5,7 @@
   // box-sizing: border-box;
   margin: 0;
   padding: 0;
+  // height: 100%;
 }
 
 // html {
@@ -79,7 +80,7 @@ header {
 }
 
 .section-light {
-  height: 50dvh;
+  min-height: 50dvh;
   text-wrap: balance;
 
   background-color: $light-color;
@@ -100,7 +101,7 @@ header {
   color: set-text-color($dark-color);
   text-wrap: balance;
   background: url('../images/fuer_wen.jpg') no-repeat fixed center/cover;
-  height: 50dvh;
+  min-height: 50dvh;
   position: relative;
 
   &::before {
@@ -121,4 +122,8 @@ header {
     z-index: 1;
     position: relative;
   }
+}
+
+#map {
+  height: 90%;
 }

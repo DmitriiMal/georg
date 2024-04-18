@@ -76,7 +76,7 @@ header svg {
 }
 
 .section-light {
-  height: 50dvh;
+  min-height: 50dvh;
   text-wrap: balance;
   background-color: #eee5cd;
   background: linear-gradient(0deg, #eee5cd 0%, #fff 100%);
@@ -90,7 +90,7 @@ header svg {
   color: #eee5cd;
   text-wrap: balance;
   background: url("../images/fuer_wen.jpg") no-repeat fixed center/cover;
-  height: 50dvh;
+  min-height: 50dvh;
   position: relative;
 }
 .section-photo::before {
@@ -105,4 +105,8 @@ header svg {
 .section-photo * {
   z-index: 1;
   position: relative;
+}
+
+#map {
+  height: 90%;
 }/*# sourceMappingURL=style.css.map */
