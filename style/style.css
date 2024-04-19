@@ -90,8 +90,9 @@ header svg {
   background: linear-gradient(0deg, #eee5cd 0%, #fff 100%);
   color: #333;
 }
-.section-light .date {
+.section-light .bold {
   font-weight: 600;
+  font-size: 1.2rem;
 }
 
 .section-photo {
@@ -118,4 +119,7 @@ header svg {
 #map {
   height: 50dvh;
   width: 100%;
+  margin-top: 1rem;
+  filter: hue-rotate(330deg);
+  filter: hue-rotate(310deg);
 }/*# sourceMappingURL=style.css.map */

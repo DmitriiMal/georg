@@ -94,8 +94,9 @@ header {
   // background: radial-gradient(circle, #fff 0%, $light-color 80%);
   color: set-text-color($light-color);
 
-  .date {
+  .bold {
     font-weight: 600;
+    font-size: 1.2rem;
   }
 }
 
@@ -133,8 +134,15 @@ header {
 #map {
   height: 50dvh;
   width: 100%;
+  margin-top: 1rem;
+  // margin-bottom: 1rem;
+  filter: hue-rotate(330deg);
+  filter: hue-rotate(310deg);
+  // frameborder: #fff 1px solid;
+  // border: #fff 1px solid;
 }
 
-#map:active {
-  // border: none;
-}
+// #map:active {
+//   border: #fff 1px solid;
+//   frameborder: #fff 1px solid;
+// }

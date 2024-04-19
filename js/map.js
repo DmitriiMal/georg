@@ -7,14 +7,14 @@ async function initMap() {
 
   map = new google.maps.Map(document.getElementById('map'), {
     center: position,
-    zoom: 16,
-    // mapId: 'DEMO_MAP_ID',
+    zoom: 16.5,
+    mapId: 'DEMO_MAP_ID',
   });
 
   const marker = new google.maps.Marker({
     map: map,
     position: position,
-    // title: 'JLT',
+    title: 'JLT',
   });
 }
 initMap();
