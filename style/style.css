@@ -20,6 +20,19 @@ h3 {
   font-weight: 200;
 }
 
+.bold {
+  font-weight: 600;
+  font-size: clamp(0.4rem, 6vw, 1.2rem);
+}
+
+::-moz-selection {
+  background-color: #d7bc71;
+}
+
+::selection {
+  background-color: #d7bc71;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -90,10 +103,6 @@ header svg {
   background: linear-gradient(0deg, #eee5cd 0%, #fff 100%);
   color: #333;
 }
-.section-light .bold {
-  font-weight: 600;
-  font-size: 1.2rem;
-}
 
 .section-photo {
   color: #eee5cd;
@@ -122,4 +131,8 @@ header svg {
   margin-top: 1rem;
   filter: hue-rotate(330deg);
   filter: hue-rotate(310deg);
+}
+
+#map:is(:focus, :hover, :active) {
+  border: #fff 1px solid;
 }/*# sourceMappingURL=style.css.map */

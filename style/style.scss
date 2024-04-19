@@ -94,10 +94,10 @@ header {
   // background: radial-gradient(circle, #fff 0%, $light-color 80%);
   color: set-text-color($light-color);
 
-  .bold {
-    font-weight: 600;
-    font-size: 1.2rem;
-  }
+  // .bold {
+  //   font-weight: 600;
+  //   font-size: clamp(0.4rem, 6vw, 1.2rem);
+  // }
 }
 
 .section-photo {
@@ -142,7 +142,7 @@ header {
   // border: #fff 1px solid;
 }
 
-// #map:active {
-//   border: #fff 1px solid;
-//   frameborder: #fff 1px solid;
-// }
+#map:is(:focus, :hover, :active) {
+  border: #fff 1px solid;
+  // frameborder: #fff 1px solid;
+}

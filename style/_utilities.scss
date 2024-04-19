@@ -20,3 +20,16 @@ h3 {
 .thin {
   font-weight: 200;
 }
+
+.bold {
+  font-weight: 600;
+  font-size: clamp(0.4rem, 6vw, 1.2rem);
+}
+
+::selection {
+  background-color: $main-color;
+}
+
+// .gradient-animation {
+
+// }

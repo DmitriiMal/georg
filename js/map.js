@@ -8,13 +8,13 @@ async function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     center: position,
     zoom: 16.5,
-    mapId: 'DEMO_MAP_ID',
+    mapId: 'JLT',
   });
 
   const marker = new google.maps.Marker({
     map: map,
     position: position,
-    title: 'JLT',
+    title: 'Treffpunkt',
   });
 }
 initMap();
