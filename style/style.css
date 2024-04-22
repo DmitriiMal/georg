@@ -157,6 +157,7 @@ header svg {
 .section-photo .label {
   height: 13rem;
   width: 13rem;
+  background: #d7bc71;
   background: linear-gradient(90deg, #eee5cd 0%, #d7bc71 100%);
   color: #333;
   font-weight: 500;
@@ -166,6 +167,7 @@ header svg {
   text-align: center;
   display: flex;
   align-items: center;
+  justify-content: center;
   position: absolute;
   bottom: -13rem;
   left: 50%;
@@ -201,5 +203,15 @@ header svg {
   }
   100% {
     border-radius: 37% 63% 71% 29%/60% 64% 36% 40%;
+  }
+}
+@media (max-width: 500px) {
+  .section-photo {
+    min-height: 65dvh;
+  }
+  .section-photo .label {
+    height: 10rem;
+    width: 10rem;
+    bottom: -8rem;
   }
 }/*# sourceMappingURL=style.css.map */
