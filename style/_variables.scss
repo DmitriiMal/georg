@@ -5,6 +5,7 @@ $main-color: #d7bc71;
 $light-color: #eee5cd;
 $dark-color: #333;
 $bg-image: url('../images/header.jpg');
+$responsive-paragraph: clamp(0.4rem, 6vw, 1.2rem);
 // $transition-duration: 0.3s;
 
 @function set-text-color($color) {

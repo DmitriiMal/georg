@@ -155,13 +155,21 @@ header svg {
   left: 0;
 }
 .section-photo .label {
-  height: 8rem;
-  width: 8rem;
-  background-color: #d7bc71;
-  border-radius: 50%;
+  height: 13rem;
+  width: 13rem;
+  background: linear-gradient(90deg, #eee5cd 0%, #d7bc71 100%);
+  color: #333;
+  font-weight: 500;
+  font-size: clamp(0.4rem, 6vw, 1.2rem);
+  border-radius: 37% 63% 71% 29%/60% 64% 36% 40%;
+  border: #d7bc71 1px solid;
   text-align: center;
-  align-items: center;
   display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: -13rem;
+  left: 50%;
+  animation: border-radius 10s linear infinite;
 }
 .section-photo * {
   z-index: 1;
@@ -175,8 +183,27 @@ header svg {
   margin-bottom: 1rem;
   filter: hue-rotate(330deg);
   filter: hue-rotate(310deg);
+  border-radius: 2px;
 }
 
 #map:is(:focus, :hover, :active) {
   border: #fff 1px solid;
+}
+
+@keyframes border-radius {
+  0% {
+    border-radius: 37% 63% 71% 29%/60% 64% 36% 40%;
+  }
+  20% {
+    border-radius: 42% 58% 66% 34%/61% 59% 41% 39%;
+  }
+  40% {
+    border-radius: 37% 63% 63% 37%/64% 53% 47% 36%;
+  }
+  60% {
+    border-radius: 34% 66% 52% 48%/66% 46% 54% 34%;
+  }
+  100% {
+    border-radius: 37% 63% 71% 29%/60% 64% 36% 40%;
+  }
 }/*# sourceMappingURL=style.css.map */
