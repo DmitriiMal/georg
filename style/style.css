@@ -1,5 +1,5 @@
 .container {
-  max-width: 1280px;
+  max-width: 1000px;
   padding: 1.5rem;
   margin: auto;
 }
@@ -16,6 +16,15 @@ h3 {
   font-size: clamp(2.3rem, 6vw, 4rem);
 }
 
+.bottom-line {
+  height: 4px;
+  width: 6rem;
+  background: #d7bc71;
+  display: block;
+  margin: 1rem 0 1.5rem 0;
+  border-radius: 1px;
+}
+
 .thin {
   font-weight: 200;
 }
@@ -26,13 +35,34 @@ h3 {
 }
 
 ::-moz-selection {
-  background-color: #d7bc71;
+  background-color: rgba(215, 188, 113, 0.5176470588);
 }
 
 ::selection {
-  background-color: #d7bc71;
+  background-color: rgba(215, 188, 113, 0.5176470588);
 }
 
+.gradient-animation {
+  background: linear-gradient(to right, #d7bc71, #fff 35%, #d7bc71);
+  background: linear-gradient(to right, rgb(0, 168, 253), #fff 35%, #e00a95);
+  background: linear-gradient(to right, #68d0cd, #fff 35%, #e15cb0);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 3s linear infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 75%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 70%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -82,7 +112,11 @@ header .header-content {
 }
 header .header-content h1, header .header-content h2,
 header .header-content h3 {
+  font-size: clamp(1rem, 8vw, 6rem);
   font-weight: 600;
+}
+header .header-content h2 {
+  font-size: clamp(0.8rem, 6vw, 4rem);
 }
 header .header-content p {
   margin-top: 1rem;
@@ -120,6 +154,15 @@ header svg {
   top: 0;
   left: 0;
 }
+.section-photo .label {
+  height: 8rem;
+  width: 8rem;
+  background-color: #d7bc71;
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
 .section-photo * {
   z-index: 1;
   position: relative;
@@ -128,7 +171,8 @@ header svg {
 #map {
   height: 50dvh;
   width: 100%;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
   filter: hue-rotate(330deg);
   filter: hue-rotate(310deg);
 }

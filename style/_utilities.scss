@@ -17,6 +17,15 @@ h3 {
   font-size: clamp(2.3rem, 6vw, 4rem);
 }
 
+.bottom-line {
+  height: 4px;
+  width: 6rem;
+  background: $main-color;
+  display: block;
+  margin: 1rem 0 1.5rem 0;
+  border-radius: 1px;
+}
+
 .thin {
   font-weight: 200;
 }
@@ -27,9 +36,28 @@ h3 {
 }
 
 ::selection {
-  background-color: $main-color;
+  background-color: #d7bc7184;
 }
 
-// .gradient-animation {
+.gradient-animation {
+  background: linear-gradient(to right, $main-color, #fff 35%, $main-color);
+  background: linear-gradient(to right, rgba(0, 168, 253), #fff 35%, #e00a95);
+  background: linear-gradient(to right, #68d0cd, #fff 35%, #e15cb0);
+  // background: linear-gradient(to right, olive, $light-color 35%, $main-color);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 3s linear infinite;
+}
 
-// }
+@keyframes gradient {
+  0% {
+    background-position: 0% 75%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 70%;
+  }
+}
