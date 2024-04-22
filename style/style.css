@@ -186,10 +186,6 @@ header svg {
   border-radius: 2px;
 }
 
-#map:is(:focus, :hover, :active) {
-  border: #fff 1px solid;
-}
-
 @keyframes border-radius {
   0% {
     border-radius: 37% 63% 71% 29%/60% 64% 36% 40%;

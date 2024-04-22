@@ -157,8 +157,9 @@ header {
 }
 
 #map:is(:focus, :hover, :active) {
-  border: #fff 1px solid;
-  // frameborder: #fff 1px solid;
+  // border: transparent 1px solid;
+  // frameborder: transparent 1px solid;
+  // outline: transparent 1px solid;
 }
 
 @keyframes border-radius {
