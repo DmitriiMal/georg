@@ -130,15 +130,19 @@ header {
     font-weight: 500;
     font-size: $responsive-paragraph;
     border-radius: 37% 63% 71% 29% / 60% 64% 36% 40%;
-    border: $main-color 1px solid;
+    // border: $main-color 1px solid;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    bottom: -13rem;
+    // position: absolute;
+    position: relative;
+    // bottom: -13rem;
     left: 50%;
-    animation: border-radius 10s linear infinite;
+    margin-top: 1rem;
+    margin-bottom: -5rem;
+    animation: border-radius 8s linear infinite;
   }
 
   & * {

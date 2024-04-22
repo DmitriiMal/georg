@@ -163,15 +163,16 @@ header svg {
   font-weight: 500;
   font-size: clamp(0.4rem, 6vw, 1.2rem);
   border-radius: 37% 63% 71% 29%/60% 64% 36% 40%;
-  border: #d7bc71 1px solid;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  bottom: -13rem;
+  position: relative;
   left: 50%;
-  animation: border-radius 10s linear infinite;
+  margin-top: 1rem;
+  margin-bottom: -5rem;
+  animation: border-radius 8s linear infinite;
 }
 .section-photo * {
   z-index: 1;
@@ -206,12 +207,8 @@ header svg {
   }
 }
 @media (max-width: 500px) {
-  .section-photo {
-    min-height: 65dvh;
-  }
   .section-photo .label {
     height: 10rem;
     width: 10rem;
-    bottom: -8rem;
   }
 }/*# sourceMappingURL=style.css.map */
