@@ -204,7 +204,7 @@ header {
 }
 
 footer {
-  min-height: 50dvh;
+  min-height: 100dvh;
   background: radial-gradient(circle, #444 0%, $dark-color 80%);
   color: set-text-color($dark-color);
 }

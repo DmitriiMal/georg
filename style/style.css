@@ -4,16 +4,18 @@
   margin: auto;
 }
 
-h1, h2,
-h3 {
+h1, h3, h2 {
   font-family: "Barlow Condensed", sans-serif;
   text-transform: uppercase;
   font-size: clamp(3rem, 8vw, 6rem);
 }
 
-h2,
-h3 {
+h2 {
   font-size: clamp(2.3rem, 6vw, 4rem);
+}
+
+h3 {
+  font-size: clamp(1.5rem, 6vw, 2.5rem);
 }
 
 .bottom-line {
@@ -110,8 +112,7 @@ header .header-content {
   text-wrap: balance;
   color: #eee5cd;
 }
-header .header-content h1, header .header-content h2,
-header .header-content h3 {
+header .header-content h1, header .header-content h2, header .header-content h3 {
   font-size: clamp(1rem, 8vw, 6rem);
   font-weight: 600;
 }
@@ -228,7 +229,7 @@ header svg {
 }
 
 footer {
-  min-height: 50dvh;
+  min-height: 100dvh;
   background: radial-gradient(circle, #444 0%, #333 80%);
   color: #eee5cd;
 }
