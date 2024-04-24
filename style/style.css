@@ -236,6 +236,26 @@ header svg {
   }
 }
 @media (max-width: 500px) {
+  .section-light .section-flexbox, .section-white .section-flexbox {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-light .section-flexbox .photo, .section-white .section-flexbox .photo {
+    height: 15rem;
+    aspect-ratio: 1;
+    overflow: hidden;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 37% 63% 71% 29%/60% 64% 36% 40%;
+    animation: border-radius 8s linear infinite;
+    margin-top: 2rem;
+  }
+  .section-light .section-flexbox .photo img, .section-white .section-flexbox .photo img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   .section-photo .label {
     height: 10rem;
     width: 10rem;
