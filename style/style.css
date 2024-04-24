@@ -235,7 +235,7 @@ header svg {
     transform: translateY(0);
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 580px) {
   .section-light .section-flexbox, .section-white .section-flexbox {
     display: flex;
     flex-direction: column;
