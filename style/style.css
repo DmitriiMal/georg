@@ -153,6 +153,7 @@ header svg {
   border-radius: 37% 63% 71% 29%/60% 64% 36% 40%;
   animation: border-radius 8s linear infinite;
   margin: auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 .section-light .section-flexbox .photo img, .section-white .section-flexbox .photo img {
   width: 100%;
