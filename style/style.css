@@ -280,6 +280,10 @@ footer .box .input__wrapper .input__field:placeholder-shown ~ .input__label {
   color: #eee5cd;
   top: 1.2rem;
 }
+footer .box .input__wrapper .input__field:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #333 inset;
+  -webkit-text-fill-color: #eee5cd !important;
+}
 footer .box .input__wrapper label,
 footer .box .input__wrapper .input__field:focus ~ .input__label {
   position: absolute;

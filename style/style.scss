@@ -252,14 +252,12 @@ footer {
           color: $light-color;
           top: 1.2rem;
         }
-      }
 
-      // .input__field:placeholder-shown ~ .input__label {
-      //   font-size: 1rem;
-      //   cursor: text;
-      //   color: $light-color;
-      //   top: 1.5rem;
-      // }
+        &:-webkit-autofill {
+          -webkit-box-shadow: 0 0 0px 1000px $dark-color inset;
+          -webkit-text-fill-color: $light-color !important;
+        }
+      }
 
       label,
       .input__field:focus ~ .input__label {
