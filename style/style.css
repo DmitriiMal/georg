@@ -295,6 +295,16 @@ footer .box .input__wrapper .input__field:focus ~ .input__label {
 footer .box .input__wrapper .input__field:focus {
   outline: 1.5px solid #d7bc71;
 }
+footer .box .input__submit {
+  padding: 1rem 4rem;
+  border-radius: 50px;
+  background: linear-gradient(50deg, #68d0cd, #fff 55%, #e15cb0);
+  transition: background 2s;
+}
+footer .box .input__submit:hover {
+  background-position: 100% 50%;
+  background-position: 0% 70%;
+}
 
 @keyframes border-radius {
   0% {

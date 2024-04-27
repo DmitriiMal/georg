@@ -278,6 +278,18 @@ footer {
         outline: 1.5px solid $main-color;
       }
     }
+
+    .input__submit {
+      padding: 1rem 4rem;
+      border-radius: 50px;
+      background: linear-gradient(50deg, #68d0cd, #fff 55%, #e15cb0);
+      transition: background 2s;
+
+      &:hover {
+        background-position: 100% 50%;
+        background-position: 0% 70%;
+      }
+    }
   }
 }
 
