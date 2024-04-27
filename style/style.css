@@ -239,19 +239,38 @@ footer .box {
   background: transparent;
   width: 100%;
   padding: 1rem 0;
+  display: grid;
+  grid-template-areas: "name email" "message message" "submit submit";
+  grid-gap: 0 2rem;
+}
+footer .box .name-input {
+  grid-area: name;
+}
+footer .box .email-input {
+  grid-area: email;
+}
+footer .box .message-input {
+  grid-area: message;
+}
+footer .box .message-input #message {
+  min-height: 100px;
+}
+footer .box .submit-input {
+  grid-area: submit;
+  height: 100px;
 }
 footer .box .input__wrapper {
   position: relative;
   padding: 1rem 0;
 }
 footer .box .input__wrapper .input__field {
+  width: 100%;
   outline: 1.5px solid #eee5cd;
   font-size: 1rem;
   border-radius: 0.25rem;
   color: #eee5cd;
   padding: 0.5rem;
   border: none;
-  padding-right: 2rem;
   background: #333;
   transition: all 0.2s;
 }
@@ -283,7 +302,6 @@ footer .box .input__wrapper .input__field:focus ~ .input__label {
   top: 0.05rem;
   padding: 0 0.25rem;
   background: #333;
-  display: block;
   font-size: 0.875rem;
   left: 0.5rem;
   color: #eee5cd;
@@ -302,13 +320,14 @@ footer .box .input__submit {
   border: none;
   cursor: pointer;
   font-size: 1rem;
+  margin: auto;
   background: linear-gradient(50deg, #68d0cd, #fff 55%, #e15cb0);
   color: #333;
   background-size: 130% auto;
   background-position: 0% 75%;
   animation: submit-exit 0.2s linear forwards;
 }
-footer .box .input__submit:hover {
+footer .box .input__submit:hover, footer .box .input__submit:focus-visible {
   animation: submit-enter 0.2s linear forwards;
 }
 
@@ -368,5 +387,8 @@ footer .box .input__submit:hover {
   .section-photo .label {
     height: 10rem;
     width: 10rem;
+  }
+  footer .box {
+    grid-template-areas: "name" "email" "message" "submit";
   }
 }/*# sourceMappingURL=style.css.map */

@@ -30,4 +30,14 @@
       // bottom: -7rem;
     }
   }
+
+  footer {
+    .box {
+      grid-template-areas:
+        'name'
+        'email'
+        'message'
+        'submit';
+    }
+  }
 }
