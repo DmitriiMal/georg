@@ -296,16 +296,35 @@ footer .box .input__wrapper .input__field:focus {
   outline: 1.5px solid #d7bc71;
 }
 footer .box .input__submit {
+  padding: 0.75rem 3rem;
   padding: 1rem 4rem;
-  border-radius: 50px;
+  border-radius: 100vw;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
   background: linear-gradient(50deg, #68d0cd, #fff 55%, #e15cb0);
-  transition: background 2s;
+  color: #333;
+  background-size: 130% auto;
+  background-position: 0% 75%;
+  animation: submit-exit 0.2s linear forwards;
 }
 footer .box .input__submit:hover {
-  background-position: 100% 50%;
-  background-position: 0% 70%;
+  animation: submit-enter 0.2s linear forwards;
 }
 
+@keyframes submit-enter {
+  to {
+    background-position: 100% 100%;
+  }
+}
+@keyframes submit-exit {
+  from {
+    background-position: 100% 100%;
+  }
+  to {
+    background-position: 0% 75%;
+  }
+}
 @keyframes border-radius {
   0% {
     border-radius: 37% 63% 71% 29%/60% 64% 36% 40%;
