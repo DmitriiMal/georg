@@ -7,6 +7,7 @@
 h1, h3, h2 {
   font-family: "Barlow Condensed", sans-serif;
   text-transform: uppercase;
+  font-size: clamp(3rem, 6vw, 6rem);
 }
 
 h2 {
@@ -124,11 +125,7 @@ header .header-content {
   color: #eee5cd;
 }
 header .header-content h1, header .header-content h2, header .header-content h3 {
-  font-size: clamp(1rem, 8vw, 6rem);
   font-weight: 600;
-}
-header .header-content h2 {
-  font-size: clamp(0.8rem, 6vw, 4rem);
 }
 header .header-content p {
   margin-top: 1rem;
