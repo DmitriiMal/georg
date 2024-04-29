@@ -91,24 +91,25 @@
         <h2>Kontakt</h2>
         <div class="bottom-line"></div>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-        <form class="box">
+        <form class="box" id="my-form" action="https://formspree.io/f/xleqzdzz" method="POST">
           <div class="input__wrapper name-input">
-            <input type="text" id="name" class="input__field" placeholder="Your Name" />
+            <input type="text" name="name" id="name" class="input__field" placeholder="Your Name" />
             <label for="name" class="input__label">Name</label>
           </div>
 
           <div class="input__wrapper email-input">
-            <input type="email" id="email" class="input__field" placeholder="Email" />
+            <input type="email" name="email" id="email" class="input__field" placeholder="Email" />
             <label for="email" class="input__label">email</label>
           </div>
 
           <div class="input__wrapper message-input">
-            <textarea type="text" id="message" class="input__field" placeholder="Message"></textarea>
+            <textarea name="message" id="message" class="input__field" placeholder="Message"></textarea>
             <label for="message" class="input__label">Message</label>
           </div>
 
           <div class="submit-input">
-            <input type="submit" class="input__submit" value="Senden" />
+            <input id="my-form-button" type="submit" class="input__submit" value="Senden" />
+            <p id="my-form-status"></p>
           </div>
         </form>
       </div>
@@ -116,5 +117,6 @@
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtjaD-saUZQ47PbxigOg25cvuO6_SuX3M&callback=initMap" async defer></script>
     <script src="js/map.js"></script>
+    <script src="js/contact_form.js"></script>
   </body>
 </html>
