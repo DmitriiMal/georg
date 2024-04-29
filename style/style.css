@@ -61,6 +61,7 @@ h3 {
   background: linear-gradient(to right, rgb(0, 168, 253), #fff 35%, #e00a95);
   background: linear-gradient(to right, #68d0cd, #fff 35%, #e15cb0);
   background-size: 200% auto;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradient 3s linear infinite;
@@ -245,12 +246,11 @@ footer {
   background-attachment: fixed;
 }
 footer .box {
-  background: transparent;
   width: 100%;
   padding: 1rem 0;
   display: grid;
   grid-template-areas: "name email" "message message" "submit submit";
-  grid-gap: 0 2rem;
+  grid-gap: 0 1rem;
 }
 footer .box .name-input {
   grid-area: name;
@@ -271,6 +271,7 @@ footer .box .submit-input {
 footer .box .input__wrapper {
   position: relative;
   padding: 1rem 0;
+  padding: 1rem 1rem 1rem 0;
 }
 footer .box .input__wrapper .input__field {
   width: 100%;

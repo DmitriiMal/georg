@@ -2,8 +2,6 @@
   max-width: $website-width;
   padding: 1.5rem;
   margin: auto;
-  // height: 100%;
-  // overflow: hidden;
 }
 
 h1 {
@@ -63,6 +61,7 @@ h3 {
   background: linear-gradient(to right, #68d0cd, #fff 35%, #e15cb0);
   // background: linear-gradient(to right, olive, $light-color 35%, $main-color);
   background-size: 200% auto;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradient 3s linear infinite;
