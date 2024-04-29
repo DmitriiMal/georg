@@ -13,7 +13,7 @@ async function handleSubmit(event) {
   })
     .then((response) => {
       if (response.ok) {
-        status.innerHTML = 'Thanks for your submission!';
+        status.innerHTML = 'Danke für deine Nachricht!';
         form.reset();
       } else {
         response.json().then((data) => {
