@@ -134,9 +134,9 @@ header {
   // @extend .section-light;
   // background: linear-gradient(90deg, $dark-color 0%, #444 100%);
   // background: radial-gradient(circle, #444 0%, $dark-color 80%);
-  // background-color: $dark-color;
   color: set-text-color($dark-color);
   text-wrap: balance;
+  background: $dark-color;
   background: url('../images/fuer_wen.jpg') no-repeat fixed center/cover;
   min-height: 50dvh;
   position: relative;
@@ -144,6 +144,8 @@ header {
   &::before {
     content: '';
     background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+
     width: 100%;
     height: 100%;
     position: absolute;
