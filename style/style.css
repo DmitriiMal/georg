@@ -330,6 +330,9 @@ footer .box .input__submit {
 footer .box .input__submit:hover, footer .box .input__submit:focus-visible {
   animation: submit-enter 0.2s linear forwards;
 }
+footer .box #my-form-status {
+  margin-top: 2rem;
+}
 
 @keyframes submit-enter {
   to {
