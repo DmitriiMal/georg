@@ -339,6 +339,7 @@ footer {
   color: set-text-color($main-color);
   backdrop-filter: blur(6px);
   opacity: 0;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .show {
