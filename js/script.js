@@ -17,6 +17,9 @@ function scrollToTop() {
 
 function addBounce() {
   document.querySelector('#chevron-up').classList.add('fa-bounce');
+  setTimeout(() => {
+    document.querySelector('#chevron-up').classList.remove('fa-bounce');
+  }, 1000);
 }
 
 function removeBounce() {
