@@ -78,6 +78,30 @@ h3 {
     background-position: 0% 70%;
   }
 }
+.scroll-animation {
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.up {
+  transform: translateY(30px);
+}
+
+.fade-in-up {
+  transform: translateY(30%);
+  opacity: 0;
+}
+
+.fade-in-left {
+  transform: translateX(-100px);
+  opacity: 0;
+}
+
+.show {
+  transform: translateY(0);
+  transform: translateZ(0);
+  opacity: 1;
+}
+
 * {
   margin: 0;
   padding: 0;

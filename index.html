@@ -33,21 +33,21 @@
     </header>
     <section id="when" class="section-light">
       <div class="container">
-        <h2>Wann?</h2>
-        <div class="bottom-line"></div>
-        <p>Nächster Lauf am</p>
-        <h3 class="">13. Mai 2024, 18.30 Uhr</h3>
+        <h2 class="scroll-animation fade-in-left">Wann?</h2>
+        <div class="bottom-line scroll-animation fade-in-left"></div>
+        <p class="scroll-animation fade-in-up">Nächster Lauf am</p>
+        <h3 class="scroll-animation fade-in-up">13. Mai 2024, 18.30 Uhr</h3>
         <!-- <p>Start am <span class="date">15. April 2024, 18.30 Uhr</span></p> -->
         <!-- <p class="thin">findet monatlich statt</p> -->
-        <p>findet monatlich statt</p>
+        <p class="scroll-animation fade-in-left">findet monatlich statt</p>
       </div>
     </section>
     <section id="for_when" class="section-photo pt-2">
       <div class="container">
-        <h2>Für wen?</h2>
-        <div class="bottom-line"></div>
-        <p class="bold">ein Lauftreff für junge Sportbegeisterte</p>
-        <p class="pt-1">Unser Lauftreff richtet sich an junge Menschen, die Spaß am Laufen haben und gerne in einer motivierten Gemeinschaft trainieren. Unser Ziel ist es, eine unterstützende Umgebung für junge Menschen zu schaffen, die ihre Leidenschaft für das Laufen entdecken oder vertiefen möchten. Egal, ob du AnfängerIn bist oder bereits Erfahrung hast, bei uns bist du herzlich willkommen!</p>
+        <h2 class="scroll-animation fade-in-left">Für wen?</h2>
+        <div class="bottom-line scroll-animation fade-in-left"></div>
+        <p class="bold scroll-animation fade-in-up">ein Lauftreff für junge Sportbegeisterte</p>
+        <p class="pt-1 scroll-animation fade-in-up">Unser Lauftreff richtet sich an junge Menschen, die Spaß am Laufen haben und gerne in einer motivierten Gemeinschaft trainieren. Unser Ziel ist es, eine unterstützende Umgebung für junge Menschen zu schaffen, die ihre Leidenschaft für das Laufen entdecken oder vertiefen möchten. Egal, ob du AnfängerIn bist oder bereits Erfahrung hast, bei uns bist du herzlich willkommen!</p>
         <div class="label">
           <p>
             kostenlos &<br />
@@ -59,11 +59,11 @@
 
     <section id="where" class="section-white pt-2">
       <div class="container">
-        <h2>Wo?</h2>
-        <div class="bottom-line"></div>
-        <p class="bold">Treffpunkt Türkenschanzpark</p>
-        <p>Wir treffen uns beim Eingang Gregor-Mendel-Straße.</p>
-        <div id="map"></div>
+        <h2 class="scroll-animation fade-in-left">Wo?</h2>
+        <div class="bottom-line scroll-animation fade-in-left"></div>
+        <p class="bold scroll-animation fade-in-up">Treffpunkt Türkenschanzpark</p>
+        <p class="scroll-animation fade-in-up">Wir treffen uns beim Eingang Gregor-Mendel-Straße.</p>
+        <div id="map" class="scroll-animation up"></div>
       </div>
     </section>
 
@@ -71,11 +71,11 @@
       <div class="container">
         <div class="section-flexbox">
           <div class="section-content">
-            <h2>Initiator</h2>
-            <div class="bottom-line"></div>
-            <div class="text">
+            <h2 class="scroll-animation fade-in-left">Initiator</h2>
+            <div class="bottom-line scroll-animation fade-in-left"></div>
+            <div class="text scroll-animation up">
               <p class="bold">Wildhaber Georg Josef, MSc</p>
-              <p>Jugendcoach</p>
+              <p class="">Jugendcoach</p>
             </div>
           </div>
           <div class="photo">
@@ -96,26 +96,26 @@
 
     <footer id="contact" class="pt-1">
       <div class="container">
-        <h2>Kontakt</h2>
-        <div class="bottom-line"></div>
-        <p>Hast du Fragen oder möchtest du einfach Hallo sagen? Ich freue mich darauf, von dir zu hören!</p>
+        <h2 class="scroll-animation fade-in-left">Kontakt</h2>
+        <div class="bottom-line scroll-animation fade-in-left"></div>
+        <p class="scroll-animation fade-in-up">Hast du Fragen oder möchtest du einfach Hallo sagen? Ich freue mich darauf, von dir zu hören!</p>
         <form class="box" id="my-form" action="https://formspree.io/f/mvoeyoly" method="POST">
-          <div class="input__wrapper name-input">
+          <div class="input__wrapper name-input scroll-animation up">
             <input type="text" name="name" id="name" class="input__field" placeholder="Your Name" required />
             <label for="name" class="input__label">Name</label>
           </div>
 
-          <div class="input__wrapper email-input">
+          <div class="input__wrapper email-input scroll-animation up">
             <input type="email" name="email" id="email" class="input__field" placeholder="Email" required />
             <label for="email" class="input__label">Email</label>
           </div>
 
-          <div class="input__wrapper message-input">
+          <div class="input__wrapper message-input scroll-animation up">
             <textarea name="message" id="message" class="input__field" placeholder="Nachricht" required></textarea>
             <label for="message" class="input__label">Nachricht</label>
           </div>
 
-          <div class="submit-input">
+          <div class="submit-input scroll-animation up">
             <input id="my-form-button" type="submit" class="input__submit" value="Senden" />
             <p id="my-form-status"></p>
           </div>
@@ -135,6 +135,7 @@
     <script src="js/copyright.js"></script>
     <script src="js/contact_form.js"></script>
     <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <script src="js/scrollAnimation.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
