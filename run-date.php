@@ -13,19 +13,16 @@ if (in_array($origin, $allowedOrigins)) {
 
 
 
-// header("Access-Control-Allow-Origin: http://127.0.0.1:5500");
-// header("Access-Control-Allow-Origin: https://lauftreff.netlify.app");
-// header("Access-Control-Allow-Origin: *");
+$host = "localhost";
+$user = "nffc8c5_dmal_not_del";
+$pass = "JwgSmw3@kff6zcY";
+$dbName = "nffc8c5_jugendlauftreff";
 
-// $host = "localhost";
-// $user = "root";
-// $pass = "";
-// $dbName = "";
+$connect = mysqli_connect($host, $user, $pass, $dbName);
 
-// $connect = mysqli_connect($host, $user, $pass, $dbName);
+if (!$connect) {
+  echo "No connection";
+}
 
-// if (!$connect) {
-//   echo "No connection";
-// }
 
 echo "13. Mai 2024, 18.30 Uhr";
