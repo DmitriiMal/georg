@@ -37,7 +37,7 @@ $row = mysqli_fetch_assoc($result);
 
 // Ensure that a row was fetched
 if ($row) {
-  // // Format the date and time
+  // Format the date and time
   // $dateString = date("d. F Y", strtotime($row['DATE']));
   // $timeString = date("H.i", strtotime($row['DATE']));
 
