@@ -39,7 +39,7 @@ function setDate() {
   output.innerHTML = datetime.value;
 }
 
-getDate(runDate, 'https://malyshkin.net/run-date-1.php');
-getDate(datetime, 'https://malyshkin.net/run-date-1.php');
+getDate(runDate, 'https://malyshkin.net/run-date.php');
+getDate(datetime, 'https://malyshkin.net/run-date.php');
 
 ok.addEventListener('click', setDate);
