@@ -3,6 +3,8 @@
 // Allowed Origins
 $allowedOrigins = array(
   'http://127.0.0.1:5500',
+  'http://localhost:3000/run-date.php',
+  'http://localhost/georg/run-date.php',
   'https://lauftreff.netlify.app',
   'https://jugendlauftreff-wien.at'
 );
@@ -25,23 +27,29 @@ if (!$connect) {
   echo "No connection";
 }
 
-// $sql = "SELECT * 
-// FROM run_date 
-// WHERE id=(
-//     SELECT max(id) FROM run_date
-//     )";
-$sql = "SELECT YEAR(DATE) AS Year, MONTH(DATE) AS Month, DAY(DATE) AS Day, HOUR(DATE) AS Hour, MINUTE(DATE) AS Minute FROM run_date WHERE id=(
+
+$sql = "SELECT * FROM run_date WHERE id=(
   SELECT max(id) FROM run_date
   );";
 
 $result = mysqli_query($connect, $sql);
-$result = mysqli_fetch_assoc($result);
+$row = mysqli_fetch_assoc($result);
+
+// Ensure that a row was fetched
+if ($row) {
+  // Format the date and time
+  $dateString = date("d. F Y", strtotime($row['DATE']));
+  $timeString = date("H.i", strtotime($row['DATE']));
+
+  // Output the formatted date and time
+  echo $dateString . ', ' . $timeString . ' Uhr';
+} else {
+  // Handle case where no data is retrieved
+  echo "No data found!";
+}
 
 
-echo "$result[Day].$result[Month].$result[Year], $result[Hour].$result[Minute] Uhr";
 
+// TO DO
+// The date should be converted to this format
 // echo "13. Mai 2024, 18.30 Uhr";
-
-
-// Example: If you want to create a custom date format such as DD Month YYYY, you could use:
-//   SELECT FORMAT(GETDATE(), 'dd ') + DATENAME(MM, GETDATE()) + FORMAT(GETDATE(), ' yyyy') AS CustomDateFormat;
