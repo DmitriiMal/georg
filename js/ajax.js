@@ -60,7 +60,7 @@ function setDate(event) {
   request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded'); //setting header for POST method
   request.onload = function () {
     if (this.status == 200) {
-      output.innerText = `Yeahh!${this.responseText}`;
+      output.innerText = `${this.responseText}`;
     } else {
       output.innerText = `There was a problem. Status ${this.status}. ${this.responseText}`;
     }
