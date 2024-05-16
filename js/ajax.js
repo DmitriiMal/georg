@@ -1,8 +1,13 @@
 const runDate = document.querySelector('#run-date');
-const datetime = document.querySelector('#datetime');
-const ok = document.querySelector('#ok');
+
+const dateForm = document.querySelector('#date-form');
+const dateTime = document.querySelector('#datetime');
+if (dateTime) {
+  let dateTimeValue = dateTime.value;
+}
 const output = document.querySelector('#output');
 
+// Get the date
 function getDate(target, response) {
   let xhttp = new XMLHttpRequest();
   xhttp.onload = function () {
@@ -23,7 +28,7 @@ function getDate(target, response) {
         const minutes = String(date.getMinutes()).padStart(2, '0');
 
         const formatedDate = `${day}. ${monthNames[monthIndex]} ${year}, ${hours}.${minutes} Uhr`;
-        console.log(formatedDate);
+        // console.log(formatedDate);
 
         target.innerText = formatedDate;
         target.value = this.responseText;
@@ -35,11 +40,33 @@ function getDate(target, response) {
   xhttp.open('GET', response, true);
   xhttp.send();
 }
-function setDate() {
-  output.innerHTML = datetime.value;
+
+if (dateForm) {
+  dateForm.addEventListener('submit', setDate);
+}
+// console.log(dateTimeValue);
+
+// Set the date
+function setDate(event) {
+  event.preventDefault();
+  dateTimeValue = document.querySelector('#datetime').value;
+  let params = `datetime=${dateTimeValue}`;
+
+  console.log(params);
+  output.innerText = params;
+
+  let request = new XMLHttpRequest();
+  request.open('POST', 'https://malyshkin.net/set-date.php', true);
+  request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded'); //setting header for POST method
+  request.onload = function () {
+    if (this.status == 200) {
+      output.innerText = `Yeahh!${this.responseText}`;
+    } else {
+      output.innerText = `There was a problem. Status ${this.status}. ${this.responseText}`;
+    }
+  };
+  request.send(params);
 }
 
 getDate(runDate, 'https://malyshkin.net/run-date.php');
-getDate(datetime, 'https://malyshkin.net/run-date.php');
-
-ok.addEventListener('click', setDate);
+getDate(dateTime, 'https://malyshkin.net/run-date.php');
