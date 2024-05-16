@@ -33,7 +33,7 @@ if (isset($_POST['datetime'])) {
   $querry = "INSERT INTO `run_date`(`DATE`) VALUES ('$datetime')";
 
   if (mysqli_query($connect, $querry)) {
-    echo "New date has been added!";
+    echo "The date has been changed!";
   } else {
     echo "Something went wrong :(";
   }
