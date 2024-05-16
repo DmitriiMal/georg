@@ -52,8 +52,7 @@ function setDate(event) {
   dateTimeValue = document.querySelector('#datetime').value;
   let params = `datetime=${dateTimeValue}`;
 
-  console.log(params);
-  output.innerText = params;
+  output.innerText = `loading...`;
 
   let request = new XMLHttpRequest();
   request.open('POST', 'https://malyshkin.net/set-date.php', true);
