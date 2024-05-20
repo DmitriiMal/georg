@@ -31,6 +31,8 @@ function getDate(target, response) {
         // console.log(formatedDate);
 
         target.innerText = formatedDate;
+        target.classList.remove('date-loader');
+
         target.value = this.responseText;
       }
     } else {

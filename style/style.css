@@ -57,8 +57,6 @@ h3 {
 }
 
 .gradient-animation {
-  background: linear-gradient(to right, #d7bc71, #fff 35%, #d7bc71);
-  background: linear-gradient(to right, rgb(0, 168, 253), #fff 35%, #e00a95);
   background: linear-gradient(to right, #68d0cd, #fff 35%, #e15cb0);
   background-size: 200% auto;
   background-clip: text;
@@ -68,6 +66,27 @@ h3 {
 }
 
 @keyframes gradient {
+  0% {
+    background-position: 0% 75%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 70%;
+  }
+}
+.date-loader {
+  background: linear-gradient(to right, #68d0cd, #fff 35%, #e15cb0);
+  background: linear-gradient(to right, #333, #eee5cd 35%, #333);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: dateLoader 3s linear infinite;
+}
+
+@keyframes dateLoader {
   0% {
     background-position: 0% 75%;
   }
