@@ -182,21 +182,21 @@ header svg {
   fill: #fff;
 }
 
-.section-light, .section-white {
+.section-light, .dashboard, .section-white {
   min-height: 50vh;
   text-wrap: balance;
   background: #eee5cd;
   background: linear-gradient(0deg, #eee5cd 0%, #fff 100%);
   color: #333;
 }
-.section-light .section-flexbox, .section-white .section-flexbox {
+.section-light .section-flexbox, .dashboard .section-flexbox, .section-white .section-flexbox {
   display: flex;
 }
-.section-light .section-flexbox .section-content, .section-white .section-flexbox .section-content {
+.section-light .section-flexbox .section-content, .dashboard .section-flexbox .section-content, .section-white .section-flexbox .section-content {
   flex-shrink: 0;
   margin-right: 2rem;
 }
-.section-light .section-flexbox .photo, .section-white .section-flexbox .photo {
+.section-light .section-flexbox .photo, .dashboard .section-flexbox .photo, .section-white .section-flexbox .photo {
   max-height: 20rem;
   aspect-ratio: 1;
   overflow: hidden;
@@ -207,10 +207,10 @@ header svg {
   margin: 2rem auto;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
-.section-light .section-flexbox .photo:hover img, .section-white .section-flexbox .photo:hover img {
+.section-light .section-flexbox .photo:hover img, .dashboard .section-flexbox .photo:hover img, .section-white .section-flexbox .photo:hover img {
   transform: scale(1.03);
 }
-.section-light .section-flexbox .photo img, .section-white .section-flexbox .photo img {
+.section-light .section-flexbox .photo img, .dashboard .section-flexbox .photo img, .section-white .section-flexbox .photo img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -368,7 +368,16 @@ footer .box .input__wrapper .input__field:focus ~ .input__label {
 footer .box .input__wrapper .input__field:focus {
   outline: 1.5px solid #d7bc71;
 }
-footer .box .input__submit {
+footer .box #my-form-status {
+  margin: 2rem 0;
+}
+footer #copyright {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 1rem;
+}
+
+.input__submit {
   padding: 0.75rem 3rem;
   padding: 1rem 4rem;
   border-radius: 100vw;
@@ -382,16 +391,8 @@ footer .box .input__submit {
   background-position: 0% 75%;
   animation: submit-exit 0.2s linear forwards;
 }
-footer .box .input__submit:hover, footer .box .input__submit:focus-visible {
+.input__submit:hover, .input__submit:focus-visible {
   animation: submit-enter 0.2s linear forwards;
-}
-footer .box #my-form-status {
-  margin: 2rem 0;
-}
-footer #copyright {
-  text-align: center;
-  margin-top: 4rem;
-  padding: 1rem;
 }
 
 #to-top {
@@ -450,12 +451,25 @@ footer #copyright {
     transform: translateY(0);
   }
 }
+.dashboard {
+  height: 100vh;
+}
+.dashboard #date-form {
+  display: flex;
+  flex-direction: column;
+}
+.dashboard #date-form .input__submit {
+  margin: 2rem 0;
+  padding: 1rem 2.5rem;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
 @media (max-width: 580px) {
-  .section-light .section-flexbox, .section-white .section-flexbox {
+  .section-light .section-flexbox, .section-white .section-flexbox, .dashboard .section-flexbox {
     display: flex;
     flex-direction: column;
   }
-  .section-light .section-flexbox .photo, .section-white .section-flexbox .photo {
+  .section-light .section-flexbox .photo, .section-white .section-flexbox .photo, .dashboard .section-flexbox .photo {
     height: 15rem;
     aspect-ratio: 1;
     overflow: hidden;
@@ -465,7 +479,7 @@ footer #copyright {
     animation: border-radius 8s linear infinite;
     margin-top: 2rem;
   }
-  .section-light .section-flexbox .photo img, .section-white .section-flexbox .photo img {
+  .section-light .section-flexbox .photo img, .section-white .section-flexbox .photo img, .dashboard .section-flexbox .photo img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;

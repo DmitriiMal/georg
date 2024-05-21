@@ -11,15 +11,17 @@
     <title>Change Date</title>
   </head>
   <body>
-    <div class="container">
-      <form id="date-form">
-        <label for="date">
-          <input type="datetime-local" name="datetime" id="datetime" />
-        </label>
-        <input type="submit" value="Submit" />
-      </form>
-      <p id="output"></p>
-    </div>
+    <section class="dashboard">
+      <div class="container">
+        <form id="date-form">
+          <label for="date">
+            <input type="datetime-local" name="datetime" id="datetime" />
+          </label>
+          <div><input class="input__submit" type="submit" value="Aktualisieren" /></div>
+        </form>
+        <p id="output"></p>
+      </div>
+    </section>
     <script src="js/ajax.js"></script>
   </body>
 </html>
