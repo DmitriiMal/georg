@@ -14,6 +14,7 @@ function getDate(target, response) {
     if (this.status == 200) {
       if (target) {
         const date = new Date(this.responseText);
+        const currentDate = new Date();
 
         // Array of month names
         const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
@@ -30,7 +31,13 @@ function getDate(target, response) {
         const formatedDate = `${day}. ${monthNames[monthIndex]} ${year}, ${hours}.${minutes} Uhr`;
         // console.log(formatedDate);
 
-        target.innerText = formatedDate;
+        // Check if the date is still actual
+        if (currentDate <= date) {
+          target.innerText = formatedDate;
+        } else {
+          target.innerText = `Termin folgt demnächst`;
+        }
+        // Remove loader animation
         target.classList.remove('date-loader');
 
         target.value = this.responseText;
