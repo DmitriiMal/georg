@@ -1,3 +1,4 @@
+// Handle To Top Button
 const toTopBtn = document.querySelector('#to-top');
 
 function userScroll() {
