@@ -1,4 +1,4 @@
-<img  src="https://github.com/DmitriiMal/georgimages/screenshos/jugendlauftreff_screen.png"  />
+<img  src="https://github.com/DmitriiMal/georg/images/jugendlauftreff_screen.png"  />
 
 ## Table of Contents
 
