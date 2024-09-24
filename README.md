@@ -1,4 +1,5 @@
-<img  src="https://github.com/DmitriiMal/georg/blob/main/images/jugendlauftreff_screen.png"  />
+![Application](./images/jugendlauftreff_screen.png)
+
 
 ## Table of Contents
 
