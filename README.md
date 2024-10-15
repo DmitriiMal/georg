@@ -1,9 +1,10 @@
 ![Application](./images/jugendlauftreff_screen.png)
 
-  ## To the project online
+## To the project online
+
 <!-- [![Portfolio Website](https://img.icons8.com/color/48/000000/web.png)](https://jugendlauftreff-wien.at/) -->
 
-[jugendlauftreff-wien.at](https://jugendlauftreff-wien.at/)
+[jugendlauftreff-wien.at](https://lauftreff.netlify.app/)
 
 ## Table of Contents
 
